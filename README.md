@@ -8,7 +8,7 @@ The amount of zeni you earn will vary, but it should be about <b>$6,000</b> per 
 
 Each fight takes a little over 2 minutes so this script earns about <b>$160,000</b> Zeni per hour automatically.
 
-![](gifs/gameplay.gif)
+![](images/example.gif)
 
 ## Prerequisites
 
