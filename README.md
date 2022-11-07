@@ -2,6 +2,8 @@
 
 Script to automatically collect Zeni to help with the achievement [Set for Life](https://www.trueachievements.com/a246977/set-for-life-achievement) which is to collect <b>$20,000,000</b> Zeni
 
+Currently only works on the PC version of the game
+
 The script works by fighting <b>Piccolo</b> in <b>Story Android 21 Arc Hard Mode Chapter 8 Map 14</b> repeatedly.
 
 The amount of zeni you earn will vary, but it should be about <b>$6,000</b> per fight if setup properly.
