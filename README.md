@@ -31,9 +31,15 @@ python main.py
 
 The script is designed to run infinitely, but eventually you will want to stop it.
 
-Unfortunetely, the only way to stop the script right now is to alt-tab to the terminal running the script and mash <b>Control C</b>
+Unfortunately, the only way to stop the script right now is to alt-tab to the terminal running the script and mash <b>Control-C</b>
 
 If you know of a more elegant way to stop the script, please create an issue or contact me.
+
+## Tips
+
+- Set the graphics settings to low to reduce the power you are using
+- Play on Offline mode
+- Run script overnight
 
 ## Installation
 

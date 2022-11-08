@@ -32,3 +32,6 @@ For a video guide, [click here](https://www.youtube.com/watch?v=N7uI18vyVcg&t=25
 
 Go back to the [README](README.md) to run the script
 
+## Notes
+You never want to save and quit anymore on this screen. Always <b>Return to Story Mode Title Screen</b>
+
