@@ -17,7 +17,7 @@ class xController:
 
 CONTROLLER = xController()
 DELAY = 5
-ZENI_PER_FIGHT = 6029
+ZENI_PER_FIGHT = 6029 # Change this for more accurate results
 
 def fight():
     startTime = time.time()

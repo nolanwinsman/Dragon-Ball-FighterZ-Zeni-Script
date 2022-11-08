@@ -1,6 +1,12 @@
-### Dragon-Ball-FighterZ-Zeni-Script
+# Dragon-Ball-FighterZ-Zeni-Script
 
-Script to automatically collect 
+Script to automatically collect Zeni to help with the achievement [Set for Life](https://www.trueachievements.com/a246977/set-for-life-achievement) which is to collect <b>$20,000,000</b> Zeni
+
+The script works by fighting <b>Piccolo</b> in <b>Story Android 21 Arc Hard Mode Chapter 8 Map 14</b> repeatedly.
+
+The amount of zeni you earn will vary, but it should be about <b>$6,000</b> per fight if setup properly.
+
+Each fight takes a little over 2 minutes so this script earns about <b>$160,000</b> Zeni per hour automatically.
 
 ![](gifs/gameplay.gif)
 
@@ -14,12 +20,20 @@ Script to automatically collect
 
 ![](images/super_warrior_arc.png)
 
-- Once your Dragon Ball FighterZ application is setup like the screenshot above, alt tab to this program and run the script.
+- Once your Dragon Ball FighterZ application is setup like the screenshot above and all the steps in [Setup](setup.md) is complete, alt-tab to this program and run the script.
 ```sh
 python main.py
 ```
-- Af
+- After this script is started, you have 15 seconds to alt tab back to <b>Dragon Ball FighterZ</b> and it will run until stopped
 
+
+## Stopping the Script
+
+The script is designed to run infinitely, but eventually you will want to stop it.
+
+Unfortunetely, the only way to stop the script right now is to alt-tab to the terminal running the script and mash <b>Control C</b>
+
+If you know of a more elegant way to stop the script, please create an issue or contact me.
 
 ## Installation
 
@@ -32,19 +46,14 @@ git clone https://github.com/nolanwinsman/Dragon-Ball-FighterZ-Zeni-Script.git
 
 Nolan Winsman - [@Github](https://github.com/nolanwinsman) - nolanwinsman@gmail.com
 
-Project Link: [https://github.com/nolanwinsman/donute-attack](https://github.com/nolanwinsman/donute-attack)
+Project Link: [https://github.com/nolanwinsman/Dragon-Ball-FighterZ-Zeni-Script](https://github.com/nolanwinsman/Dragon-Ball-FighterZ-Zeni-Script)
 
 # Contributers
 - nolanwinsman
 
 ## Files
 
-- assets : folder to hold game assets, primarily the art.
-- gifs : folder to hold gifs for README
-- sounds : game sounds.
-- data.py : class to hold valuable data like colors.
-- enemy.py : class for the enemy object. This is the donuts
-- hud.py : class for the information displayed like candy canes and score
-- player.py : class for the player
+- main.py   : main script to execute
 - README.md : this file
-- requirements.txt : Python modules
+- setup.md  : instructions on how to setup the game before running the script
+- images    : folder of images used to visualise stuff
