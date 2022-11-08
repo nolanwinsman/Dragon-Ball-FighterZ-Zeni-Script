@@ -1,9 +1,11 @@
 import time
 import pyautogui
 import pydirectinput
-import keyboard
+
 
 class xController:
+    """A class to map the Keyboard Controls to the Xbox equivalent
+    """
     X = "u"
     A = "j"
     PAUSE = "tab"
@@ -23,7 +25,6 @@ def fight():
         pydirectinput.write(CONTROLLER.X)
         time.sleep(0.014)
     executionTime = (time.time() - startTime)
-    print(f"Fight took {int(executionTime)} to finish")
     
     
     for i in range(6):
@@ -59,34 +60,30 @@ def start_battle():
 
 
 def loop():
-    i = 0
-    startTime = time.time()
-    executionTime = 1
-    zeni = 0
-    Looping = True 
-    while Looping:
-        if keyboard.is_pressed('escape'):
-            Looping = False
-            continue
-        i += 1
-        print("-----------")
-        print(f"Loop {i} \nTotal Execution Time {int(executionTime/60)} minutes\nEarned roughly {zeni} Total Zeni")
-        print("-----------")
         enter_map()
         start_battle()
         fight()
         exit_map()
-        zeni += ZENI_PER_FIGHT
-        time.sleep(10)
-        executionTime = (time.time() - startTime)
-    print(f"Looping Done, earned a total of {zeni} Zeni in {executionTime}")
 
 
 def main():
-    print("Script Started, ")
-    time.sleep(15) # gives you 
-    print("waiting complete")
-    loop()
+    print("Script Started, You have 15 seconds to switch your screen to Dragon Ball FighterZ")
+    time.sleep(15)
+    print("waiting complete, starting game loop")
+    i = 0
+    startTime = time.time()
+    executionTime = 1
+    zeni = 0
+    while True:
+        i += 1
+        print("-----------")
+        print(f"Loop {i} \nTotal Execution Time {int(executionTime/60)} minutes\nEarned roughly {zeni} Total Zeni")
+        print("-----------")
+        loop()
+        zeni += ZENI_PER_FIGHT
+        time.sleep(10)
+        executionTime = (time.time() - startTime)
+
 
 if __name__ == "__main__":
     main()
